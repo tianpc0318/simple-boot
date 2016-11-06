@@ -1,0 +1,19 @@
+<?xml version="1.0" encoding="UTF-8"?>  
+<!DOCTYPE mapper PUBLIC "-//mybatis.org//DTD Mapper 3.0//EN" "http://mybatis.org/dtd/mybatis-3-mapper.dtd">
+<!-- namespace必须指向Dao接口 -->
+<mapper namespace="com.miles.springboot.mapper.StudentMapper">
+	<resultMap id="StuDto" type="com.miles.springboot.dto.StudentDto">
+		<result column="uid" property="uid" />
+		<result column="uname" property="uname" />
+		<result column="uno" property="uno" />
+		<result column="score" property="score" />
+	</resultMap>
+
+	<!-- 根据ID查询数据 -->
+	<select id="findAllStuent" resultMap="StuDto">
+		select uid, uname, uno, score from stu
+		<if test="limt != null and limt != ''">
+			where score >= #{limt}
+		</if>
+	</select>
+</mapper> 
