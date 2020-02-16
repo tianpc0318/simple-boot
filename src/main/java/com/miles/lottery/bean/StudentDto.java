@@ -1,4 +1,4 @@
-package com.miles.springboot.dto;
+package com.miles.lottery.bean;
 
 import java.io.Serializable;
 

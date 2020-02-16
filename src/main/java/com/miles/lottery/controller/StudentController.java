@@ -1,20 +1,16 @@
-package com.miles.springboot.controller;
+package com.miles.lottery.controller;
 
-import java.util.HashMap;
-import java.util.Map;
-
-import javax.annotation.Resource;
-
-import org.springframework.boot.autoconfigure.EnableAutoConfiguration;
+import com.miles.lottery.mapper.StudentMapper;
 import org.springframework.web.bind.annotation.PathVariable;
 import org.springframework.web.bind.annotation.RequestMapping;
 import org.springframework.web.bind.annotation.RestController;
 
-import com.miles.springboot.mapper.StudentMapper;
+import javax.annotation.Resource;
+import java.util.HashMap;
+import java.util.Map;
 
 @RestController
 @RequestMapping("/student")
-@EnableAutoConfiguration
 public class StudentController {
 
 	@Resource

@@ -1,8 +1,8 @@
 <?xml version="1.0" encoding="UTF-8"?>  
 <!DOCTYPE mapper PUBLIC "-//mybatis.org//DTD Mapper 3.0//EN" "http://mybatis.org/dtd/mybatis-3-mapper.dtd">
 <!-- namespace必须指向Dao接口 -->
-<mapper namespace="com.miles.springboot.mapper.StudentMapper">
-	<resultMap id="StuDto" type="com.miles.springboot.dto.StudentDto">
+<mapper namespace="com.miles.lottery.mapper.StudentMapper">
+	<resultMap id="StuDto" type="com.miles.lottery.bean.StudentDto">
 		<result column="uid" property="uid" />
 		<result column="uname" property="uname" />
 		<result column="uno" property="uno" />
